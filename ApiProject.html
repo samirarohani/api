@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    .pop{
+      width: 30% ;
+    background-color: #424242;
+    float: left;
+    margin:10px;
+
+    }
+    .flag{
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 33%;
+      float: left;
+ margin:10px;
+    }
+    .weather{
+      width: 30% ;
+      background-color: #424242;
+      margin:10px;
+      float: left;
+      height: 315px;
+    }
+    @media screen and (max-width:800px) {.flag,.pop,.weather{
+      width: 100%;
+      float: left;
+    }}
+  </style>
+  
+</head>
+
+<body style="font-family: Verdana, sans-serif; ">
+
+  <div class="p-4 " style="background-color: #424242">
+    <label for="countries" style="color:white">Select a country:</label>
+    <select name="countries" id="countries" class="p-2 px-auto">
+    </select>
+  </div>
+
+  <div class=" p-3 ">
+    <div class="d-flex flex-column p-2 pop" style="">
+      <div class="d-flex flex-row ">
+        <p style="color: #ffa726;font-size: 18px">Capital:</p>
+        <p class="capital" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size:18px">Native Name:</p>
+        <p class="NativeName" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Region Name:</p>
+        <p class="RegionName" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Population:</p>
+        <p class="Population" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Langueges:</p>
+        <p class="Langueges" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Time Zone:</p>
+        <p class="timezones" style="font-size: 18px;color: white"></p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Calling Codes:</p>
+        <p class="callingCodes" style="font-size: 18px;color: white"></p>
+      </div>
+    </div>
+
+    <div class="flag p-2" style="">
+      <img src="" style="width: 100%;height: 300px">
+    </div>
+
+    <div class="weather d-flex flex-column p-2 " style="">
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Wind Speed:</p>
+        <p class="windspeed" style="font-size: 18px;color: white"></p>
+        <p style="font-size: 18px;color: white">m/s</p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Temperature:</p>
+        <p class="temperature" style="font-size: 18px;color: white"></p>
+        <p style="font-size: 18px;color: white">&deg;c</p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Humidity:</p>
+        <p class="humidity" style="font-size: 18px;color: white"></p>
+        <p style="font-size: 18px;color: white">%</p>
+      </div>
+      <div class="d-flex flex-row">
+        <p style="color: #ffa726;font-size: 18px">Visibility:</p>
+        <p class="Visibility" style="font-size: 18px;color: white"></p>
+        <p style="font-size: 18px;color: white">m</p>
+      </div>
+    </div>
+  </div>
+  <script src="api.js"></script>
+
+</body>
+</html>
